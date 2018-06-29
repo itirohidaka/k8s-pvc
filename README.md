@@ -2,7 +2,7 @@
 
 This is a example how to use the Persistent Volume Claim with IBM Cloud Kubernetes Services.
 
-1) Creating the NFS volume and attach to Kubernetes Workers:
+1) Creating the NFS volume and attach to Kubernetes Workers (Tier: ibmc-file-bronze / Size: 20GB):
 
 ``` Shell
 kubectl apply -f iks-pv-myvolume.yaml
