@@ -4,9 +4,9 @@ This is a example how to use the Persistent Volume Claim with IBM Cloud Kubernet
 
 1) Creating the NFS volume and attach to Kubernetes Workers:
 
-''' Shell
+``` Shell
 kubectl apply -f iks-pv-myvolume.yaml
-'''
+```
 
 2) Verify the status of PVC creation by using the following command.
 
