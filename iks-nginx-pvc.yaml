@@ -1,9 +1,9 @@
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
-  name: alpine
+  name: app
   labels:
-    app: alpine
+    app: app1
     tester: itiro
 spec:
   selector:
