@@ -20,9 +20,10 @@ kubectl describe pvc mypvc
 kubectl apply -f iks-nginx-pvc.yaml
 ```
 
-4) You can verify the directory myvolume create on /.
+4) You can verify the directory myvolume create on /. 
 ``` console
-kubectl exec -it <pod-name>
+kubectl get pods
+kubectl exec -it <pod-name> ls /
 ```
 
 :+1:
