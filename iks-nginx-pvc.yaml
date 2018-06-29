@@ -1,0 +1,27 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: alpine
+  labels:
+    app: alpine
+    tester: itiro
+spec:
+  selector:
+    matchLabels:
+      app: pvctest
+  replicas: 2 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: pvctest
+    spec:
+      containers:
+      - image: nginx
+        name: itiro
+        volumeMounts:
+        - name: myvolume
+          mountPath: /myvolume
+      volumes:
+      - name: myvolume
+        persistentVolumeClaim:
+          claimName: mypvc
