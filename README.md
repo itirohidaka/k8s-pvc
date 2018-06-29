@@ -24,3 +24,5 @@ kubectl apply -f iks-nginx-pvc.yaml
 ``` console
 kubectl exec -it <pod-name>
 ```
+
+:+1:
