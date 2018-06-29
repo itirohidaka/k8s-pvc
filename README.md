@@ -2,6 +2,7 @@
 
 This is a example how to use the Persistent Volume Claim with IBM Cloud Kubernetes Services.
 
+## Step-by-Step
 1) Creating the NFS volume and attach to Kubernetes Workers (Tier: ibmc-file-bronze / Size: 20GB):
 
 ``` console
@@ -28,5 +29,5 @@ kubectl exec -it <pod-name> ls /
 
 :+1:
 
-References
+##References
 [IBM Cloud DOCs](https://console.bluemix.net/docs/containers/cs_storage.html#create)
