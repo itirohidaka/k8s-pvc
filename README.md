@@ -27,3 +27,6 @@ kubectl exec -it <pod-name> ls /
 ```
 
 :+1:
+
+References
+[IBM Cloud DOCs](https://console.bluemix.net/docs/containers/cs_storage.html#create)
